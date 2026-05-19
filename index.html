@@ -23,15 +23,48 @@
         <select id="lang-select" aria-label="Language" onchange="setLanguage(this.value)">
             <option value="de">DE</option>
             <option value="en">EN</option>
+            <option value="el">EL</option>
+            <option value="es">ES</option>
+            <option value="it">IT</option>
+            <option value="sv">SV</option>
+            <option value="ru">RU</option>
         </select>
     </div>
 </header>
 
 <main class="page-shell">
+    <div class="newsroom-photo-placeholder" style="width:100vw; max-width:100%; display:flex; justify-content:center; align-items:center; margin:0 auto 32px auto;">
+        <div style="width:100%; max-width:1180px; height:360px; background:linear-gradient(120deg, #e7f1fb 60%, #c6e6f7 100%), url('pics/bg.png') center/cover no-repeat; border-radius:0; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(16,24,32,0.08); font-size:2.2rem; color:#0033ba; font-weight:700; letter-spacing:0.04em; position:relative;">
+              <img src="pics/bg.png" alt="Background" style="width:100%;max-width:1180px;height:360px;object-fit:cover;">
+
+        </div>
+    </div>
+
+    <div class="product-overview-placeholder" style="width:100vw; max-width:100%; display:flex; justify-content:center; align-items:center; margin:0 auto 32px auto;">
+        <div style="width:100%; max-width:1180px; background:#f8fbff; border-radius:0; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 24px rgba(16,24,32,0.06); padding:38px 18px 38px 18px;">
+            <h2 id="product-overview-title" style="margin:0 0 18px 0; font-size:2rem; color:#0033ba; font-weight:800; letter-spacing:0.03em; text-align:center;">Präzise Schnittqualität – datenbasiert optimiert</h2>
+            <div id="product-overview-text" style="font-size:1.15rem; color:#4d5a68; text-align:center; max-width:700px; white-space:pre-line;">In der klassischen Fertigung basiert die Qualität beim Laserschneiden auf Erfahrung: 
+ 
+Parameter werden manuell angepasst, bewertet und iterativ verbessert. Dieser Prozess ist zeitintensiv, abhängig vom Bediener und anfällig für Schwankungen.
+ 
+ 
+ 
+Der TRUMPF Cutting Assistant transformiert diesen Ansatz.
+ 
+ 
+ 
+Durch den Einsatz von künstlicher Intelligenz werden Schneidparameter automatisch erfasst, bewertet und optimiert – basierend auf realen Qualitätsdaten direkt am Bauteil. 
+ 
+ 
+ 
+Die Qualität entsteht nicht mehr durch Erfahrung. 
+ 
+Sie wird messbar und reproduzierbar.</div>
+        </div>
+    </div>
     <section class="newsroom-template" id="newsroom">
         <div class="section-head newsroom-head">
-            <h2 id="newsroom-heading">Headline placeholder for newsroom content</h2>
-            <p id="newsroom-intro">Use this area for a featured story intro, short summary, or campaign message.</p>
+            <h2 id="newsroom-heading">Anwendung in unterschiedlichen Fertigungsrealitäten</h2>
         </div>
 
         <!-- Pager moved below template-feature -->
@@ -39,12 +72,41 @@
         <div class="template-grid">
             <article class="template-feature">
                 <div class="template-visual template-visual-1" id="visual-1" aria-hidden="false">
-                    <span class="template-kicker" id="card-1-kicker">Story 01</span>
-                    <strong id="card-1-date">00.00.0000</strong>
+                    <h3 id="story1-title" style="margin:0 0 12px 0; font-size:1.5rem; color:#0033ba;">Serienfertigung: Stabilität als entscheidender Faktor</h3>
+                    <p id="story1-body-1" style="margin:0 0 12px 0; color:#4d5a68; line-height:1.6;">In der Serienproduktion sind Abweichungen keine Einzelfälle, sondern ein Multiplikator für Kosten.</p>
+                    <p id="story1-body-2" style="margin:0 0 12px 0; color:#4d5a68; line-height:1.6;">Eine minimale Veränderung der Schnittqualität wird bei großen Stückzahlen schnell sichtbar.</p>
+                    <p id="story1-body-3" style="margin:0 0 16px 0; color:#4d5a68; line-height:1.6;">Materialchargen variieren, Bauteile werden komplexer, Anforderungen steigen.</p>
+                    <h4 id="story1-effects-heading" style="margin:0 0 10px 0; color:#0033ba; font-size:1.05rem;">Der Cutting Assistant sorgt hier für eine kontinuierliche Stabilisierung des Prozesses:</h4>
+                    <ul style="margin:0; padding-left:20px; color:#4d5a68; line-height:1.6;">
+                        <li id="story1-effect-1">Anpassung der Parameter an Materialschwankungen</li>
+                        <li id="story1-effect-2">konstante Qualität über gesamte Serienläufe</li>
+                        <li id="story1-effect-3">reproduzierbare Ergebnisse unabhängig von Bedienerwechseln</li>
+                    </ul>
+                    <p id="story1-final" style="margin:14px 0 0 0; color:#4d5a68; line-height:1.6;">Der Prozess wird nicht nur optimiert - er wird robust.</p>
                 </div>
-                <div class="template-visual template-visual-2" id="visual-2" aria-hidden="true" style="display:none; background: linear-gradient(145deg, #7ED957 96%, #00BFA6 94%);">
-                    <span class="template-kicker" id="card-2-kicker">Story 02</span>
-                    <strong id="card-2-date">11.11.1111</strong>
+                <div class="template-visual template-visual-2" id="visual-2" aria-hidden="true" style="display:none;">
+                    <h3 id="card-2-kicker" style="margin:0 0 12px 0; font-size:1.5rem; color:#0033ba;">Mittelstand: Know-how als Engpass</h3>
+                    <p id="card-2-body-1" style="margin:0 0 12px 0; color:#4d5a68; line-height:1.6;">In vielen Betrieben konzentriert sich das Fertigungswissen auf wenige Personen.</p>
+                    <p id="card-2-body-2" style="margin:0 0 16px 0; color:#4d5a68; line-height:1.6;">Fehlt diese Erfahrung, steigen Fehlerquote und Einrichtzeiten.</p>
+                    <h4 id="card-2-effects-heading" style="margin:0 0 10px 0; color:#0033ba; font-size:1.05rem;">Der Cutting Assistant verlagert dieses Wissen in den Prozess selbst:</h4>
+                    <ul style="margin:0; padding-left:20px; color:#4d5a68; line-height:1.6;">
+                        <li id="card-2-effect-1">Bewertung erfolgt objektiv und reproduzierbar</li>
+                        <li id="card-2-effect-2">Parameter werden systematisch ermittelt</li>
+                        <li id="card-2-effect-3">Ergebnisse sind unabhängig vom Bediener</li>
+                    </ul>
+                    <p id="card-2-final" style="margin:14px 0 0 0; color:#4d5a68; line-height:1.6;">Erfahrung bleibt relevant - aber sie ist nicht mehr der limitierende Faktor.</p>
+                </div>
+                <div class="template-visual template-visual-3" id="visual-3" aria-hidden="true" style="display:none;">
+                    <h3 id="card-3-kicker" style="margin:0 0 12px 0; font-size:1.5rem; color:#0033ba;">Startups und Prototyping</h3>
+                    <p id="card-3-body-1" style="margin:0 0 12px 0; color:#4d5a68; line-height:1.6;">In der Entwicklung stehen Geschwindigkeit und Iteration im Vordergrund.</p>
+                    <p id="card-3-body-2" style="margin:0 0 16px 0; color:#4d5a68; line-height:1.6;">Fertigungs-Know-how ist oft nicht vorhanden.</p>
+                    <h4 id="card-3-effects-heading" style="margin:0 0 10px 0; color:#0033ba; font-size:1.05rem;">Die KI übernimmt die Prozessoptimierung.</h4>
+                    <ul style="margin:0; padding-left:20px; color:#4d5a68; line-height:1.6;">
+                        <li id="card-3-effect-1">schnelle Iteration von Bauteilen</li>
+                        <li id="card-3-effect-2">sofort nutzbare Schneidparameter</li>
+                        <li id="card-3-effect-3">reproduzierbare Qualität ab dem ersten Bauteil</li>
+                        <li id="card-3-effect-4">Fokus auf Produktentwicklung statt Prozessoptimierung</li>
+                    </ul>
                 </div>
                 
             </article>
@@ -78,33 +140,32 @@ let currentVisual = 0;
 function showVisual(idx) {
     const v1 = document.getElementById('visual-1');
     const v2 = document.getElementById('visual-2');
+    const v3 = document.getElementById('visual-3');
     const pager = document.querySelectorAll('.newsroom-page');
     const leftArrow = document.getElementById('arrow-left');
     const rightArrow = document.getElementById('arrow-right');
+    const visuals = [v1, v2, v3].filter(Boolean);
+    const maxIndex = Math.max(0, visuals.length - 1);
     let newIdx = idx;
     if (idx === 'left') {
         newIdx = Math.max(0, currentVisual - 1);
     } else if (idx === 'right') {
-        newIdx = Math.min(1, currentVisual + 1);
+        newIdx = Math.min(maxIndex, currentVisual + 1);
     } else if (typeof idx === 'number') {
-        newIdx = Math.max(0, Math.min(1, idx));
+        newIdx = Math.max(0, Math.min(maxIndex, idx));
     }
-    if (newIdx === 0) {
-        v1.style.display = '';
-        v1.setAttribute('aria-hidden', 'false');
-        v2.style.display = 'none';
-        v2.setAttribute('aria-hidden', 'true');
-    } else if (newIdx === 1) {
-        v1.style.display = 'none';
-        v1.setAttribute('aria-hidden', 'true');
-        v2.style.display = '';
-        v2.setAttribute('aria-hidden', 'false');
-    }
+
+    visuals.forEach((visual, visualIndex) => {
+        const isVisible = visualIndex === newIdx;
+        visual.style.display = isVisible ? '' : 'none';
+        visual.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+    });
+
     pager.forEach((btn, i) => btn.classList.toggle('is-active', i === newIdx));
     currentVisual = newIdx;
     if (leftArrow && rightArrow) {
         leftArrow.disabled = currentVisual === 0;
-        rightArrow.disabled = currentVisual === 1;
+        rightArrow.disabled = currentVisual === maxIndex;
     }
 }
 let translations = {};
@@ -112,14 +173,41 @@ let translations = {};
 const fallbackTranslations = {
     de: {
         title: "Cutting Assistent",
-        newsroomHeading: "Platzhalter für Ihre Newsroom-Inhalte",
+        productOverviewTitle: "Präzise Schnittqualität - datenbasiert optimiert",
+        productOverviewText: "In der klassischen Fertigung basiert die Qualität beim Laserschneiden auf Erfahrung:\n\nParameter werden manuell angepasst, bewertet und iterativ verbessert. Dieser Prozess ist zeitintensiv, abhängig vom Bediener und anfällig für Schwankungen.\n\nDer TRUMPF Cutting Assistant transformiert diesen Ansatz.\n\nDurch den Einsatz von künstlicher Intelligenz werden Schneidparameter automatisch erfasst, bewertet und optimiert - basierend auf realen Qualitätsdaten direkt am Bauteil.\n\nDie Qualität entsteht nicht mehr durch Erfahrung.\n\nSie wird messbar und reproduzierbar.",
+        story1Title: "Serienfertigung: Stabilität als entscheidender Faktor",
+        story1Body1: "In der Serienproduktion sind Abweichungen keine Einzelfälle, sondern ein Multiplikator für Kosten.",
+        story1Body2: "Eine minimale Veränderung der Schnittqualität wird bei großen Stückzahlen schnell sichtbar.",
+        story1Body3: "Materialchargen variieren, Bauteile werden komplexer, Anforderungen steigen.",
+        story1EffectsHeading: "Der Cutting Assistant sorgt hier für eine kontinuierliche Stabilisierung des Prozesses:",
+        story1Effect1: "Anpassung der Parameter an Materialschwankungen",
+        story1Effect2: "konstante Qualität über gesamte Serienläufe",
+        story1Effect3: "reproduzierbare Ergebnisse unabhängig von Bedienerwechseln",
+        story1FinalHtml: "Der Prozess wird nicht nur optimiert - er wird robust.",
+        newsroomHeading: "Anwendung in unterschiedlichen Fertigungsrealitäten",
         newsroomIntro: "Nutzen Sie diesen Bereich für Storys, Pressemitteilungen oder Magazin-Teaser.",
-        card1Kicker: "Story 01",
+        card1Kicker: "OEM & Serienfertigung",
         card1Date: "00.00.0000",
         card1Tag: "Kategorie",
         card1Title: "Platzhalter-Überschrift für den Hauptbeitrag",
         card1Text: "Hier steht später Ihre redaktionelle Zusammenfassung oder Kampagnenbotschaft.",
         card1Link: "Mehr lesen",
+        card2Kicker: "Mittelstand: Know-how als Engpass",
+        card2Body1: "In vielen Betrieben konzentriert sich das Fertigungswissen auf wenige Personen.",
+        card2Body2: "Fehlt diese Erfahrung, steigen Fehlerquote und Einrichtzeiten.",
+        card2EffectsHeading: "Der Cutting Assistant verlagert dieses Wissen in den Prozess selbst:",
+        card2Effect1: "Bewertung erfolgt objektiv und reproduzierbar",
+        card2Effect2: "Parameter werden systematisch ermittelt",
+        card2Effect3: "Ergebnisse sind unabhängig vom Bediener",
+        card2Final: "Erfahrung bleibt relevant - aber sie ist nicht mehr der limitierende Faktor.",
+        card3Kicker: "Startups und Prototyping",
+        card3Body1: "In der Entwicklung stehen Geschwindigkeit und Iteration im Vordergrund.",
+        card3Body2: "Fertigungs-Know-how ist oft nicht vorhanden.",
+        card3EffectsHeading: "Die KI übernimmt die Prozessoptimierung.",
+        card3Effect1: "schnelle Iteration von Bauteilen",
+        card3Effect2: "sofort nutzbare Schneidparameter",
+        card3Effect3: "reproduzierbare Qualität ab dem ersten Bauteil",
+        card3Effect4: "Fokus auf Produktentwicklung statt Prozessoptimierung",
         card2Tag: "Update",
         card2Title: "Platzhalter-Überschrift für den zweiten Beitrag",
         card2Text: "Kurze Beschreibung für das zweite Newsroom-Element.",
@@ -134,14 +222,41 @@ const fallbackTranslations = {
     },
     en: {
         title: "Cutting Assistent",
-        newsroomHeading: "Placeholder for your newsroom content",
+        productOverviewTitle: "Precise Cutting Quality - Optimized with Data",
+        productOverviewText: "In traditional manufacturing, laser-cutting quality is often based on experience:\n\nParameters are adjusted manually, evaluated, and iteratively improved. This process is time-consuming, operator-dependent, and prone to variation.\n\nThe TRUMPF Cutting Assistant transforms this approach.\n\nBy using artificial intelligence, cutting parameters are captured, evaluated, and optimized automatically - based on real quality data directly from the component.\n\nQuality is no longer created by experience alone.\n\nIt becomes measurable and reproducible.",
+        story1Title: "Series Production: Stability as the Decisive Factor",
+        story1Body1: "In serial production, deviations are not isolated cases but a multiplier for costs.",
+        story1Body2: "Even a minimal change in cutting quality quickly becomes visible at high production volumes.",
+        story1Body3: "Material batches vary, components become more complex, and requirements increase.",
+        story1EffectsHeading: "The Cutting Assistant ensures continuous stabilization of the process:",
+        story1Effect1: "automatic adjustment of parameters to material fluctuations",
+        story1Effect2: "consistent quality across entire production runs",
+        story1Effect3: "reproducible results independent of operator changes",
+        story1FinalHtml: "The process is not only optimized - it becomes robust.",
+        newsroomHeading: "Application in Different Manufacturing Realities",
         newsroomIntro: "Use this area for stories, press releases, or magazine teasers.",
-        card1Kicker: "Story 01",
+        card1Kicker: "OEM & Series Production",
         card1Date: "00.00.0000",
         card1Tag: "Category",
         card1Title: "Placeholder headline for the main feature",
         card1Text: "This is where your editorial summary or campaign message will go.",
         card1Link: "Read more",
+        card2Kicker: "Medium-sized Businesses: Know-how as a Bottleneck",
+        card2Body1: "In many companies, manufacturing know-how is concentrated in only a few people.",
+        card2Body2: "If this experience is missing, error rates and setup times increase.",
+        card2EffectsHeading: "The Cutting Assistant shifts this knowledge into the process itself:",
+        card2Effect1: "evaluation is objective and reproducible",
+        card2Effect2: "parameters are determined systematically",
+        card2Effect3: "results are independent of the operator",
+        card2Final: "Experience remains relevant - but it is no longer the limiting factor.",
+        card3Kicker: "Startups and Prototyping",
+        card3Body1: "In development, speed and iteration are the priority.",
+        card3Body2: "Manufacturing know-how is often not available.",
+        card3EffectsHeading: "AI takes over process optimization.",
+        card3Effect1: "fast iteration of components",
+        card3Effect2: "immediately usable cutting parameters",
+        card3Effect3: "reproducible quality from the first component",
+        card3Effect4: "focus on product development instead of process optimization",
         card2Tag: "Update",
         card2Title: "Placeholder headline for the second feature",
         card2Text: "Short description for the second newsroom element.",
@@ -153,6 +268,246 @@ const fallbackTranslations = {
         card4Text: "Short teaser for another article or callout.",
         newsroomNote: "Scroll horizontally through the placeholders and replace them with your own content later.",
         footerText: "© 2026 TRUMPF. All rights reserved."
+    },
+    el: {
+        title: "Βοηθός Κοπής",
+        productOverviewTitle: "Ακριβής ποιότητα κοπής - βελτιστοποιημένη με δεδομένα",
+        productOverviewText: "Στην παραδοσιακή παραγωγή, η ποιότητα στην κοπή με λέιζερ βασίζεται συχνά στην εμπειρία:\n\nΟι παράμετροι ρυθμίζονται χειροκίνητα, αξιολογούνται και βελτιώνονται επαναληπτικά. Αυτή η διαδικασία είναι χρονοβόρα, εξαρτάται από τον χειριστή και είναι επιρρεπής σε διακυμάνσεις.\n\nΟ TRUMPF Cutting Assistant μετασχηματίζει αυτή την προσέγγιση.\n\nΜε τη χρήση τεχνητής νοημοσύνης, οι παράμετροι κοπής καταγράφονται, αξιολογούνται και βελτιστοποιούνται αυτόματα - με βάση πραγματικά δεδομένα ποιότητας απευθείας από το εξάρτημα.\n\nΗ ποιότητα δεν προκύπτει πλέον μόνο από την εμπειρία.\n\nΓίνεται μετρήσιμη και επαναλήψιμη.",
+        story1Title: "Σειριακή παραγωγή: Σταθερότητα ως καθοριστικός παράγοντας",
+        story1Body1: "Στη σειριακή παραγωγή, οι αποκλίσεις δεν είναι μεμονωμένες περιπτώσεις αλλά πολλαπλασιαστής κόστους.",
+        story1Body2: "Ακόμη και μια μικρή μεταβολή στην ποιότητα κοπής γίνεται γρήγορα ορατή σε μεγάλους όγκους παραγωγής.",
+        story1Body3: "Οι παρτίδες υλικού διαφέρουν, τα εξαρτήματα γίνονται πιο σύνθετα και οι απαιτήσεις αυξάνονται.",
+        story1EffectsHeading: "Ο Cutting Assistant εξασφαλίζει συνεχή σταθεροποίηση της διαδικασίας:",
+        story1Effect1: "προσαρμογή των παραμέτρων σε διακυμάνσεις υλικού",
+        story1Effect2: "σταθερή ποιότητα σε ολόκληρες σειρές παραγωγής",
+        story1Effect3: "επαναλήψιμα αποτελέσματα ανεξάρτητα από αλλαγές χειριστών",
+        story1FinalHtml: "Η διαδικασία δεν βελτιστοποιείται μόνο - γίνεται ανθεκτική.",
+        newsroomHeading: "Εφαρμογή σε διαφορετικές πραγματικότητες παραγωγής",
+        card1Kicker: "OEM & Μαζική Παραγωγή",
+        card1Date: "00.00.0000",
+        card1Tag: "Κατηγορία",
+        card1Title: "Πρόχειρος τίτλος για το κύριο θέμα",
+        card1Text: "Εδώ θα εμφανιστεί αργότερα η δημοσιογραφική σύνοψη ή το μήνυμα της καμπάνιας σας.",
+        card1Link: "Διαβάστε περισσότερα",
+        card2Kicker: "Μικρομεσαίες επιχειρήσεις: το know-how ως εμπόδιο",
+        card2Body1: "Σε πολλές επιχειρήσεις, η τεχνογνωσία παραγωγής συγκεντρώνεται σε λίγα άτομα.",
+        card2Body2: "Όταν λείπει αυτή η εμπειρία, αυξάνονται τα ποσοστά σφαλμάτων και οι χρόνοι ρύθμισης.",
+        card2EffectsHeading: "Ο Cutting Assistant μεταφέρει αυτή τη γνώση μέσα στην ίδια τη διαδικασία:",
+        card2Effect1: "η αξιολόγηση γίνεται αντικειμενικά και επαναλήψιμα",
+        card2Effect2: "οι παράμετροι προσδιορίζονται συστηματικά",
+        card2Effect3: "τα αποτελέσματα είναι ανεξάρτητα από τον χειριστή",
+        card2Final: "Η εμπειρία παραμένει σημαντική - αλλά δεν είναι πλέον ο περιοριστικός παράγοντας.",
+        card3Kicker: "Startups και Πρωτοτυποποίηση",
+        card3Body1: "Στην ανάπτυξη, προτεραιότητα έχουν η ταχύτητα και η επανάληψη.",
+        card3Body2: "Η τεχνογνωσία παραγωγής συχνά δεν είναι διαθέσιμη.",
+        card3EffectsHeading: "Η ΤΝ αναλαμβάνει τη βελτιστοποίηση της διαδικασίας.",
+        card3Effect1: "γρήγορη επανάληψη εξαρτημάτων",
+        card3Effect2: "άμεσα αξιοποιήσιμες παράμετροι κοπής",
+        card3Effect3: "επαναλήψιμη ποιότητα από το πρώτο κιόλας εξάρτημα",
+        card3Effect4: "εστίαση στην ανάπτυξη προϊόντος αντί για βελτιστοποίηση διαδικασίας",
+        card2Tag: "Ενημέρωση",
+        card2Title: "Πρόχειρος τίτλος για το δεύτερο θέμα",
+        card2Text: "Σύντομη περιγραφή για το δεύτερο στοιχείο του newsroom.",
+        card3Tag: "Τύπος",
+        card3Title: "Πρόχειρος τίτλος για το τρίτο θέμα",
+        card3Text: "Σύντομη περιγραφή για το τρίτο στοιχείο του newsroom.",
+        card4Tag: "Περιοδικό",
+        card4Title: "Πρόχειρος τίτλος για το τέταρτο θέμα",
+        card4Text: "Σύντομο teaser για άλλο άρθρο ή επισήμανση.",
+        newsroomNote: "Κυλήστε οριζόντια στα placeholders και αντικαταστήστε τα αργότερα με το δικό σας περιεχόμενο.",
+        footerText: "© 2026 TRUMPF. Με επιφύλαξη παντός δικαιώματος."
+    },
+    es: {
+        title: "Asistente de Corte",
+        productOverviewTitle: "Calidad de corte precisa - optimizada con datos",
+        productOverviewText: "En la fabricación tradicional, la calidad del corte por láser suele basarse en la experiencia:\n\nLos parámetros se ajustan manualmente, se evalúan y se mejoran de forma iterativa. Este proceso requiere tiempo, depende del operario y es propenso a variaciones.\n\nEl TRUMPF Cutting Assistant transforma este enfoque.\n\nCon el uso de inteligencia artificial, los parámetros de corte se capturan, evalúan y optimizan automáticamente, basándose en datos reales de calidad directamente de la pieza.\n\nLa calidad ya no depende solo de la experiencia.\n\nSe vuelve medible y reproducible.",
+        story1Title: "Producción en serie: la estabilidad como factor decisivo",
+        story1Body1: "En la producción en serie, las desviaciones no son casos aislados, sino un multiplicador de costos.",
+        story1Body2: "Incluso una variación mínima en la calidad de corte se vuelve rápidamente visible con grandes volúmenes.",
+        story1Body3: "Los lotes de material varían, las piezas se vuelven más complejas y las exigencias aumentan.",
+        story1EffectsHeading: "Aquí, el Cutting Assistant garantiza una estabilización continua del proceso:",
+        story1Effect1: "ajuste de parámetros ante fluctuaciones del material",
+        story1Effect2: "calidad constante durante tiradas completas de serie",
+        story1Effect3: "resultados reproducibles independientemente de los cambios de operario",
+        story1FinalHtml: "El proceso no solo se optimiza: se vuelve robusto.",
+        newsroomHeading: "Aplicación en diferentes realidades de fabricación",
+        card1Kicker: "OEM y Producción en Serie",
+        card1Date: "00.00.0000",
+        card1Tag: "Categoría",
+        card1Title: "Titular de marcador para la historia principal",
+        card1Text: "Aquí aparecerá más adelante tu resumen editorial o mensaje de campaña.",
+        card1Link: "Leer más",
+        card2Kicker: "Pymes: el know-how como cuello de botella",
+        card2Body1: "En muchas empresas, el conocimiento de fabricación se concentra en pocas personas.",
+        card2Body2: "Si falta esta experiencia, aumentan la tasa de errores y los tiempos de preparación.",
+        card2EffectsHeading: "El Cutting Assistant traslada este conocimiento al propio proceso:",
+        card2Effect1: "la evaluación es objetiva y reproducible",
+        card2Effect2: "los parámetros se determinan sistemáticamente",
+        card2Effect3: "los resultados son independientes del operario",
+        card2Final: "La experiencia sigue siendo relevante, pero ya no es el factor limitante.",
+        card3Kicker: "Startups y Prototipado",
+        card3Body1: "En el desarrollo, la velocidad y la iteración son la prioridad.",
+        card3Body2: "El know-how de fabricación a menudo no está disponible.",
+        card3EffectsHeading: "La IA se encarga de la optimización del proceso.",
+        card3Effect1: "iteración rápida de componentes",
+        card3Effect2: "parámetros de corte utilizables de inmediato",
+        card3Effect3: "calidad reproducible desde el primer componente",
+        card3Effect4: "enfoque en el desarrollo de producto en lugar de la optimización del proceso",
+        card2Tag: "Actualización",
+        card2Title: "Titular de marcador para la segunda historia",
+        card2Text: "Breve descripción para el segundo elemento del newsroom.",
+        card3Tag: "Prensa",
+        card3Title: "Titular de marcador para la tercera historia",
+        card3Text: "Breve descripción para el tercer elemento del newsroom.",
+        card4Tag: "Revista",
+        card4Title: "Titular de marcador para la cuarta historia",
+        card4Text: "Breve avance para otro artículo o destacado.",
+        newsroomNote: "Desplázate horizontalmente por los marcadores y sustitúyelos más tarde con tu propio contenido.",
+        footerText: "© 2026 TRUMPF. Todos los derechos reservados."
+    },
+    it: {
+        title: "Assistente di Taglio",
+        productOverviewTitle: "Qualità di taglio precisa - ottimizzata con i dati",
+        productOverviewText: "Nella produzione tradizionale, la qualità del taglio laser si basa spesso sull'esperienza:\n\nI parametri vengono regolati manualmente, valutati e migliorati in modo iterativo. Questo processo richiede tempo, dipende dall'operatore ed è soggetto a variazioni.\n\nTRUMPF Cutting Assistant trasforma questo approccio.\n\nGrazie all'intelligenza artificiale, i parametri di taglio vengono acquisiti, valutati e ottimizzati automaticamente, sulla base di dati reali di qualità direttamente dal componente.\n\nLa qualità non deriva più solo dall'esperienza.\n\nDiventa misurabile e riproducibile.",
+        story1Title: "Produzione in serie: la stabilità come fattore decisivo",
+        story1Body1: "Nella produzione in serie, le deviazioni non sono casi isolati, ma un moltiplicatore dei costi.",
+        story1Body2: "Anche una minima variazione della qualità di taglio diventa rapidamente visibile con grandi volumi.",
+        story1Body3: "I lotti di materiale variano, i componenti diventano più complessi e i requisiti aumentano.",
+        story1EffectsHeading: "Qui il Cutting Assistant garantisce una stabilizzazione continua del processo:",
+        story1Effect1: "adattamento dei parametri alle variazioni del materiale",
+        story1Effect2: "qualità costante su intere serie di produzione",
+        story1Effect3: "risultati riproducibili indipendentemente dai cambi di operatore",
+        story1FinalHtml: "Il processo non viene solo ottimizzato: diventa robusto.",
+        newsroomHeading: "Applicazione in diverse realtà produttive",
+        card1Kicker: "OEM e Produzione in Serie",
+        card1Date: "00.00.0000",
+        card1Tag: "Categoria",
+        card1Title: "Titolo segnaposto per il contenuto principale",
+        card1Text: "Qui verrà inserito il tuo riepilogo editoriale o messaggio di campagna.",
+        card1Link: "Leggi di più",
+        card2Kicker: "PMI: il know-how come collo di bottiglia",
+        card2Body1: "In molte aziende, il know-how di produzione è concentrato in poche persone.",
+        card2Body2: "Se questa esperienza manca, aumentano il tasso di errore e i tempi di attrezzaggio.",
+        card2EffectsHeading: "Il Cutting Assistant trasferisce questa conoscenza nel processo stesso:",
+        card2Effect1: "la valutazione avviene in modo oggettivo e riproducibile",
+        card2Effect2: "i parametri vengono determinati sistematicamente",
+        card2Effect3: "i risultati sono indipendenti dall'operatore",
+        card2Final: "L'esperienza resta rilevante, ma non è più il fattore limitante.",
+        card3Kicker: "Startup e Prototipazione",
+        card3Body1: "Nello sviluppo, velocità e iterazione sono al centro.",
+        card3Body2: "Il know-how produttivo spesso non è disponibile.",
+        card3EffectsHeading: "L'IA si occupa dell'ottimizzazione del processo.",
+        card3Effect1: "iterazione rapida dei componenti",
+        card3Effect2: "parametri di taglio immediatamente utilizzabili",
+        card3Effect3: "qualità riproducibile fin dal primo componente",
+        card3Effect4: "focus sullo sviluppo prodotto invece che sull'ottimizzazione del processo",
+        card2Tag: "Aggiornamento",
+        card2Title: "Titolo segnaposto per il secondo contenuto",
+        card2Text: "Breve descrizione per il secondo elemento newsroom.",
+        card3Tag: "Stampa",
+        card3Title: "Titolo segnaposto per il terzo contenuto",
+        card3Text: "Breve descrizione per il terzo elemento newsroom.",
+        card4Tag: "Magazine",
+        card4Title: "Titolo segnaposto per il quarto contenuto",
+        card4Text: "Breve teaser per un altro articolo o richiamo.",
+        newsroomNote: "Scorri orizzontalmente i segnaposto e sostituiscili successivamente con i tuoi contenuti.",
+        footerText: "© 2026 TRUMPF. Tutti i diritti riservati."
+    },
+    sv: {
+        title: "Skärassistent",
+        productOverviewTitle: "Precis skärkvalitet - optimerad med data",
+        productOverviewText: "I traditionell tillverkning bygger kvaliteten i laserskärning ofta på erfarenhet:\n\nParametrar justeras manuellt, utvärderas och förbättras iterativt. Denna process är tidskrävande, beroende av operatören och känslig för variationer.\n\nTRUMPF Cutting Assistant förändrar detta arbetssätt.\n\nMed hjälp av artificiell intelligens registreras, utvärderas och optimeras skärparametrar automatiskt - baserat på verkliga kvalitetsdata direkt från komponenten.\n\nKvalitet skapas inte längre enbart genom erfarenhet.\n\nDen blir mätbar och reproducerbar.",
+        story1Title: "Serietillverkning: stabilitet som avgörande faktor",
+        story1Body1: "I serietillverkning är avvikelser inte enstaka fall, utan en kostnadsmultiplikator.",
+        story1Body2: "Även en minimal förändring i skärkvalitet blir snabbt synlig vid stora volymer.",
+        story1Body3: "Materialbatcher varierar, komponenter blir mer komplexa och kraven ökar.",
+        story1EffectsHeading: "Här säkerställer Cutting Assistant en kontinuerlig stabilisering av processen:",
+        story1Effect1: "anpassning av parametrar till materialvariationer",
+        story1Effect2: "konstant kvalitet genom hela seriekörningar",
+        story1Effect3: "reproducerbara resultat oberoende av operatörsbyten",
+        story1FinalHtml: "Processen optimeras inte bara - den blir robust.",
+        newsroomHeading: "Tillämpning i olika tillverkningsverkligheter",
+        card1Kicker: "OEM och Serietillverkning",
+        card1Date: "00.00.0000",
+        card1Tag: "Kategori",
+        card1Title: "Platshållarrubrik för huvudinslaget",
+        card1Text: "Här kommer senare din redaktionella sammanfattning eller kampanjtext.",
+        card1Link: "Läs mer",
+        card2Kicker: "SMF: know-how som flaskhals",
+        card2Body1: "I många företag är tillverkningskunskap koncentrerad till ett fåtal personer.",
+        card2Body2: "Om denna erfarenhet saknas ökar felkvoten och ställtiderna.",
+        card2EffectsHeading: "Cutting Assistant flyttar denna kunskap in i själva processen:",
+        card2Effect1: "utvärderingen sker objektivt och reproducerbart",
+        card2Effect2: "parametrar bestäms systematiskt",
+        card2Effect3: "resultaten är oberoende av operatören",
+        card2Final: "Erfarenhet förblir viktig - men den är inte längre den begränsande faktorn.",
+        card3Kicker: "Startupbolag och Prototyping",
+        card3Body1: "I utveckling står hastighet och iteration i fokus.",
+        card3Body2: "Tillverkningskunskap saknas ofta.",
+        card3EffectsHeading: "AI tar över processoptimeringen.",
+        card3Effect1: "snabb iteration av komponenter",
+        card3Effect2: "omedelbart användbara skärparametrar",
+        card3Effect3: "reproducerbar kvalitet från den första komponenten",
+        card3Effect4: "fokus på produktutveckling i stället för processoptimering",
+        card2Tag: "Uppdatering",
+        card2Title: "Platshållarrubrik för det andra inslaget",
+        card2Text: "Kort beskrivning för det andra newsroom-elementet.",
+        card3Tag: "Press",
+        card3Title: "Platshållarrubrik för det tredje inslaget",
+        card3Text: "Kort beskrivning för det tredje newsroom-elementet.",
+        card4Tag: "Magasin",
+        card4Title: "Platshållarrubrik för det fjärde inslaget",
+        card4Text: "Kort teaser för en annan artikel eller ett annat innehåll.",
+        newsroomNote: "Bläddra horisontellt genom platshållarna och ersätt dem senare med eget innehåll.",
+        footerText: "© 2026 TRUMPF. Alla rättigheter förbehållna."
+    },
+    ru: {
+        title: "Ассистент Резки",
+        productOverviewTitle: "Точное качество резки - оптимизировано данными",
+        productOverviewText: "В традиционном производстве качество лазерной резки часто основано на опыте:\n\nПараметры настраиваются вручную, оцениваются и улучшаются итеративно. Этот процесс занимает много времени, зависит от оператора и подвержен колебаниям.\n\nTRUMPF Cutting Assistant меняет этот подход.\n\nС помощью искусственного интеллекта параметры резки автоматически собираются, оцениваются и оптимизируются на основе реальных данных качества непосредственно с детали.\n\nКачество больше не создается только опытом.\n\nОно становится измеримым и воспроизводимым.",
+        story1Title: "Серийное производство: стабильность как решающий фактор",
+        story1Body1: "В серийном производстве отклонения - это не единичные случаи, а множитель затрат.",
+        story1Body2: "Даже минимальное изменение качества реза быстро становится заметным при больших объемах.",
+        story1Body3: "Партии материала различаются, детали становятся сложнее, требования растут.",
+        story1EffectsHeading: "Здесь Cutting Assistant обеспечивает непрерывную стабилизацию процесса:",
+        story1Effect1: "адаптация параметров к колебаниям материала",
+        story1Effect2: "стабильное качество на всем протяжении серийных запусков",
+        story1Effect3: "воспроизводимые результаты независимо от смены операторов",
+        story1FinalHtml: "Процесс не просто оптимизируется - он становится устойчивым.",
+        newsroomHeading: "Применение в различных производственных реалиях",
+        card1Kicker: "OEM и Серийное Производство",
+        card1Date: "00.00.0000",
+        card1Tag: "Категория",
+        card1Title: "Заполнитель заголовка для основного материала",
+        card1Text: "Здесь позже будет ваш редакционный обзор или сообщение кампании.",
+        card1Link: "Читать далее",
+        card2Kicker: "Средний бизнес: ноу-хау как узкое место",
+        card2Body1: "Во многих компаниях производственные знания сосредоточены у нескольких сотрудников.",
+        card2Body2: "Если этого опыта не хватает, растут уровень ошибок и время наладки.",
+        card2EffectsHeading: "Cutting Assistant переносит эти знания в сам процесс:",
+        card2Effect1: "оценка выполняется объективно и воспроизводимо",
+        card2Effect2: "параметры определяются системно",
+        card2Effect3: "результаты не зависят от оператора",
+        card2Final: "Опыт остается важным, но больше не является ограничивающим фактором.",
+        card3Kicker: "Стартапы и Прототипирование",
+        card3Body1: "В разработке в приоритете скорость и итерации.",
+        card3Body2: "Производственная экспертиза часто отсутствует.",
+        card3EffectsHeading: "ИИ берет на себя оптимизацию процесса.",
+        card3Effect1: "быстрая итерация деталей",
+        card3Effect2: "сразу применимые параметры резки",
+        card3Effect3: "воспроизводимое качество с первой детали",
+        card3Effect4: "фокус на разработке продукта вместо оптимизации процесса",
+        card2Tag: "Обновление",
+        card2Title: "Заполнитель заголовка для второго материала",
+        card2Text: "Краткое описание для второго элемента newsroom.",
+        card3Tag: "Пресса",
+        card3Title: "Заполнитель заголовка для третьего материала",
+        card3Text: "Краткое описание для третьего элемента newsroom.",
+        card4Tag: "Журнал",
+        card4Title: "Заполнитель заголовка для четвертого материала",
+        card4Text: "Краткий тизер для другого материала или блока.",
+        newsroomNote: "Прокручивайте заполнители по горизонтали и позже замените их своим контентом.",
+        footerText: "© 2026 TRUMPF. Все права защищены."
     }
 };
 
@@ -161,7 +516,12 @@ async function loadLanguage(lang) {
     try {
         const fileByLang = {
             de: "DE.json",
-            en: "EN.json"
+            en: "EN.json",
+            el: "EL.json",
+            es: "ES.json",
+            it: "IT.json",
+            sv: "SV.json",
+            ru: "RU.json"
         };
 
         const fileName = fileByLang[lang] || "DE.json";
@@ -173,7 +533,7 @@ async function loadLanguage(lang) {
         translations = await response.json();
     } catch (error) {
         // Fallback is only used if JSON loading fails (e.g., wrong path or file:// restrictions).
-        translations = fallbackTranslations[lang] || fallbackTranslations.de;
+        translations = fallbackTranslations[lang] || fallbackTranslations.en;
         console.warn("Using fallback translations because JSON could not be loaded:", error);
     }
 
@@ -183,26 +543,65 @@ async function loadLanguage(lang) {
 
 // Apply translations to elements
 function applyTranslations() {
-    document.getElementById("title").innerText = translations.title;
-    document.getElementById("newsroom-heading").innerText = translations.newsroomHeading;
-    document.getElementById("newsroom-intro").innerText = translations.newsroomIntro;
-    document.getElementById("card-1-kicker").innerText = translations.card1Kicker;
-    document.getElementById("card-1-date").innerText = translations.card1Date;
-    document.getElementById("card-1-tag").innerText = translations.card1Tag;
-    document.getElementById("card-1-title").innerText = translations.card1Title;
-    document.getElementById("card-1-text").innerText = translations.card1Text;
-    document.getElementById("card-1-link").innerText = translations.card1Link;
-    document.getElementById("card-2-tag").innerText = translations.card2Tag;
-    document.getElementById("card-2-title").innerText = translations.card2Title;
-    document.getElementById("card-2-text").innerText = translations.card2Text;
-    document.getElementById("card-3-tag").innerText = translations.card3Tag;
-    document.getElementById("card-3-title").innerText = translations.card3Title;
-    document.getElementById("card-3-text").innerText = translations.card3Text;
-    document.getElementById("card-4-tag").innerText = translations.card4Tag;
-    document.getElementById("card-4-title").innerText = translations.card4Title;
-    document.getElementById("card-4-text").innerText = translations.card4Text;
-    document.getElementById("newsroom-note").innerText = translations.newsroomNote;
-    document.getElementById("footer-text").innerText = translations.footerText;
+    const setText = (id, value) => {
+        const element = document.getElementById(id);
+        if (element && typeof value !== "undefined") {
+            element.innerText = value;
+        }
+    };
+
+    const setHtml = (id, value) => {
+        const element = document.getElementById(id);
+        if (element && typeof value !== "undefined") {
+            element.innerHTML = value;
+        }
+    };
+
+    setText("title", translations.title);
+    setText("product-overview-title", translations.productOverviewTitle);
+    setText("product-overview-text", translations.productOverviewText);
+    setText("story1-title", translations.story1Title);
+    setText("story1-body-1", translations.story1Body1);
+    setText("story1-body-2", translations.story1Body2);
+    setText("story1-body-3", translations.story1Body3);
+    setText("story1-effects-heading", translations.story1EffectsHeading);
+    setText("story1-effect-1", translations.story1Effect1);
+    setText("story1-effect-2", translations.story1Effect2);
+    setText("story1-effect-3", translations.story1Effect3);
+    setHtml("story1-final", translations.story1FinalHtml);
+    setText("newsroom-heading", translations.newsroomHeading);
+    setText("card-1-kicker", translations.card1Kicker);
+    setText("card-1-tag", translations.card1Tag);
+    setText("card-1-title", translations.card1Title);
+    setText("card-1-text", translations.card1Text);
+    setText("card-1-link", translations.card1Link);
+    setText("card-2-kicker", translations.card2Kicker);
+    setText("card-2-body-1", translations.card2Body1);
+    setText("card-2-body-2", translations.card2Body2);
+    setText("card-2-effects-heading", translations.card2EffectsHeading);
+    setText("card-2-effect-1", translations.card2Effect1);
+    setText("card-2-effect-2", translations.card2Effect2);
+    setText("card-2-effect-3", translations.card2Effect3);
+    setText("card-2-final", translations.card2Final);
+    setText("card-3-kicker", translations.card3Kicker);
+    setText("card-3-body-1", translations.card3Body1);
+    setText("card-3-body-2", translations.card3Body2);
+    setText("card-3-effects-heading", translations.card3EffectsHeading);
+    setText("card-3-effect-1", translations.card3Effect1);
+    setText("card-3-effect-2", translations.card3Effect2);
+    setText("card-3-effect-3", translations.card3Effect3);
+    setText("card-3-effect-4", translations.card3Effect4);
+    setText("card-2-tag", translations.card2Tag);
+    setText("card-2-title", translations.card2Title);
+    setText("card-2-text", translations.card2Text);
+    setText("card-3-tag", translations.card3Tag);
+    setText("card-3-title", translations.card3Title);
+    setText("card-3-text", translations.card3Text);
+    setText("card-4-tag", translations.card4Tag);
+    setText("card-4-title", translations.card4Title);
+    setText("card-4-text", translations.card4Text);
+    setText("newsroom-note", translations.newsroomNote);
+    setText("footer-text", translations.footerText);
 }
 
 // Switch language

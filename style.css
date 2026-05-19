@@ -194,10 +194,25 @@ nav a:focus-visible::after {
     justify-content: space-between;
     padding: 24px;
     color: rgba(255, 255, 255, 0.92);
+    border-radius: 0;
 }
 
 .template-visual-1 {
-    background: linear-gradient(145deg, rgba(0, 102, 179, 0.96), rgba(0, 79, 138, 0.94));
+    background: #ffffff;
+    color: var(--text-main);
+    border-radius: 0;
+}
+
+.template-visual-2 {
+    background: #ffffff;
+    color: var(--text-main);
+    border-radius: 0;
+}
+
+.template-visual-3 {
+    background: #ffffff;
+    color: var(--text-main);
+    border-radius: 0;
 }
 
 .template-kicker {
@@ -466,6 +481,7 @@ footer {
     .template-feature {
         grid-template-columns: 1fr;
         min-height: 0;
+        border-radius: 0;
     }
 
     .template-visual {
