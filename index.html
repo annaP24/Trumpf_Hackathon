@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Meine Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="brand">
+        <img src="pics/logo.png" alt="Company Logo" class="site-logo">
+        <h1 id="title">Meine Firma</h1>
+    </div>
+
+    <!-- Sprachwahl -->
+    <div class="lang-switch">
+        <span class="lang-icon" aria-hidden="true">&#127760;</span>
+        <select id="lang-select" aria-label="Language" onchange="setLanguage(this.value)">
+            <option value="de">DE</option>
+            <option value="en">EN</option>
+        </select>
+    </div>
+</header>
+
+<main class="page-shell">
+    <section class="newsroom-template" id="newsroom">
+        <div class="section-head newsroom-head">
+            <h2 id="newsroom-heading">Headline placeholder for newsroom content</h2>
+            <p id="newsroom-intro">Use this area for a featured story intro, short summary, or campaign message.</p>
+        </div>
+
+        <!-- Pager moved below template-feature -->
+
+        <div class="template-grid">
+            <article class="template-feature">
+                <div class="template-visual template-visual-1" id="visual-1" aria-hidden="false">
+                    <span class="template-kicker" id="card-1-kicker">Story 01</span>
+                    <strong id="card-1-date">00.00.0000</strong>
+                </div>
+                <div class="template-visual template-visual-2" id="visual-2" aria-hidden="true" style="display:none; background: linear-gradient(145deg, #7ED957 96%, #00BFA6 94%);">
+                    <span class="template-kicker" id="card-2-kicker">Story 02</span>
+                    <strong id="card-2-date">11.11.1111</strong>
+                </div>
+                
+            </article>
+            <div class="newsroom-pager" aria-label="Newsroom pages" style="justify-content: center; margin: 18px 0 12px 0;">
+                <button class="scroll-arrow" id="arrow-left" type="button" aria-label="Scroll left" onclick="showVisual('left')" style="margin-right: 8px;">
+                    &#8249;
+                </button>
+                <button class="newsroom-page is-active" type="button" data-target="0" aria-label="Go to page 1" onclick="showVisual(0)">01</button>
+                <button class="newsroom-page" type="button" data-target="1" aria-label="Go to page 2" onclick="showVisual(1)">02</button>
+                <button class="newsroom-page" type="button" data-target="2" aria-label="Go to page 3" onclick="showVisual(2)">03</button>
+                <button class="scroll-arrow" id="arrow-right" type="button" aria-label="Scroll right" onclick="showVisual('right')" style="margin-left: 8px;">
+                    &#8250;
+                </button>
+            </div>
+
+            <div class="template-strip" aria-label="Newsroom placeholder cards">
+                <!-- Removed template cards as requested -->
+            </div>
+
+            <p class="template-note" id="newsroom-note">Scroll horizontally to browse the placeholders and replace them with your own content later.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p id="footer-text">© 2026 TRUMPF. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+let currentVisual = 0;
+function showVisual(idx) {
+    const v1 = document.getElementById('visual-1');
+    const v2 = document.getElementById('visual-2');
+    const pager = document.querySelectorAll('.newsroom-page');
+    const leftArrow = document.getElementById('arrow-left');
+    const rightArrow = document.getElementById('arrow-right');
+    let newIdx = idx;
+    if (idx === 'left') {
+        newIdx = Math.max(0, currentVisual - 1);
+    } else if (idx === 'right') {
+        newIdx = Math.min(1, currentVisual + 1);
+    } else if (typeof idx === 'number') {
+        newIdx = Math.max(0, Math.min(1, idx));
+    }
+    if (newIdx === 0) {
+        v1.style.display = '';
+        v1.setAttribute('aria-hidden', 'false');
+        v2.style.display = 'none';
+        v2.setAttribute('aria-hidden', 'true');
+    } else if (newIdx === 1) {
+        v1.style.display = 'none';
+        v1.setAttribute('aria-hidden', 'true');
+        v2.style.display = '';
+        v2.setAttribute('aria-hidden', 'false');
+    }
+    pager.forEach((btn, i) => btn.classList.toggle('is-active', i === newIdx));
+    currentVisual = newIdx;
+    if (leftArrow && rightArrow) {
+        leftArrow.disabled = currentVisual === 0;
+        rightArrow.disabled = currentVisual === 1;
+    }
+}
+let translations = {};
+
+const fallbackTranslations = {
+    de: {
+        title: "Cutting Assistent",
+        newsroomHeading: "Platzhalter für Ihre Newsroom-Inhalte",
+        newsroomIntro: "Nutzen Sie diesen Bereich für Storys, Pressemitteilungen oder Magazin-Teaser.",
+        card1Kicker: "Story 01",
+        card1Date: "00.00.0000",
+        card1Tag: "Kategorie",
+        card1Title: "Platzhalter-Überschrift für den Hauptbeitrag",
+        card1Text: "Hier steht später Ihre redaktionelle Zusammenfassung oder Kampagnenbotschaft.",
+        card1Link: "Mehr lesen",
+        card2Tag: "Update",
+        card2Title: "Platzhalter-Überschrift für den zweiten Beitrag",
+        card2Text: "Kurze Beschreibung für das zweite Newsroom-Element.",
+        card3Tag: "Presse",
+        card3Title: "Platzhalter-Überschrift für den dritten Beitrag",
+        card3Text: "Kurze Beschreibung für das dritte Newsroom-Element.",
+        card4Tag: "Magazin",
+        card4Title: "Platzhalter-Überschrift für den vierten Beitrag",
+        card4Text: "Kurzer Teaser für einen weiteren Beitrag oder Hinweis.",
+        newsroomNote: "Scrollen Sie horizontal durch die Platzhalter und ersetzen Sie diese später mit Ihren eigenen Inhalten.",
+        footerText: "© 2026 TRUMPF. Alle Rechte vorbehalten."
+    },
+    en: {
+        title: "Cutting Assistent",
+        newsroomHeading: "Placeholder for your newsroom content",
+        newsroomIntro: "Use this area for stories, press releases, or magazine teasers.",
+        card1Kicker: "Story 01",
+        card1Date: "00.00.0000",
+        card1Tag: "Category",
+        card1Title: "Placeholder headline for the main feature",
+        card1Text: "This is where your editorial summary or campaign message will go.",
+        card1Link: "Read more",
+        card2Tag: "Update",
+        card2Title: "Placeholder headline for the second feature",
+        card2Text: "Short description for the second newsroom element.",
+        card3Tag: "Press",
+        card3Title: "Placeholder headline for the third feature",
+        card3Text: "Short description for the third newsroom element.",
+        card4Tag: "Magazine",
+        card4Title: "Placeholder headline for the fourth feature",
+        card4Text: "Short teaser for another article or callout.",
+        newsroomNote: "Scroll horizontally through the placeholders and replace them with your own content later.",
+        footerText: "© 2026 TRUMPF. All rights reserved."
+    }
+};
+
+// Load language JSON
+async function loadLanguage(lang) {
+    try {
+        const fileByLang = {
+            de: "DE.json",
+            en: "EN.json"
+        };
+
+        const fileName = fileByLang[lang] || "DE.json";
+        const response = await fetch(`lang/${fileName}`, { cache: "no-store" });
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
+
+        translations = await response.json();
+    } catch (error) {
+        // Fallback is only used if JSON loading fails (e.g., wrong path or file:// restrictions).
+        translations = fallbackTranslations[lang] || fallbackTranslations.de;
+        console.warn("Using fallback translations because JSON could not be loaded:", error);
+    }
+
+    applyTranslations();
+    localStorage.setItem("lang", lang);
+}
+
+// Apply translations to elements
+function applyTranslations() {
+    document.getElementById("title").innerText = translations.title;
+    document.getElementById("newsroom-heading").innerText = translations.newsroomHeading;
+    document.getElementById("newsroom-intro").innerText = translations.newsroomIntro;
+    document.getElementById("card-1-kicker").innerText = translations.card1Kicker;
+    document.getElementById("card-1-date").innerText = translations.card1Date;
+    document.getElementById("card-1-tag").innerText = translations.card1Tag;
+    document.getElementById("card-1-title").innerText = translations.card1Title;
+    document.getElementById("card-1-text").innerText = translations.card1Text;
+    document.getElementById("card-1-link").innerText = translations.card1Link;
+    document.getElementById("card-2-tag").innerText = translations.card2Tag;
+    document.getElementById("card-2-title").innerText = translations.card2Title;
+    document.getElementById("card-2-text").innerText = translations.card2Text;
+    document.getElementById("card-3-tag").innerText = translations.card3Tag;
+    document.getElementById("card-3-title").innerText = translations.card3Title;
+    document.getElementById("card-3-text").innerText = translations.card3Text;
+    document.getElementById("card-4-tag").innerText = translations.card4Tag;
+    document.getElementById("card-4-title").innerText = translations.card4Title;
+    document.getElementById("card-4-text").innerText = translations.card4Text;
+    document.getElementById("newsroom-note").innerText = translations.newsroomNote;
+    document.getElementById("footer-text").innerText = translations.footerText;
+}
+
+// Switch language
+function setLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.getElementById("lang-select").value = lang;
+    loadLanguage(lang);
+}
+
+function setupPager() {
+    const strip = document.querySelector(".template-strip");
+    const pageButtons = Array.from(document.querySelectorAll(".newsroom-page"));
+
+    if (!strip || pageButtons.length === 0) {
+        return;
+    }
+
+    const cardWidth = () => {
+        const firstCard = strip.querySelector(".template-card");
+        if (!firstCard) {
+            return strip.clientWidth;
+        }
+
+        const styles = window.getComputedStyle(strip);
+        const gap = parseFloat(styles.columnGap || styles.gap || "0");
+        return firstCard.getBoundingClientRect().width + gap;
+    };
+
+    const updateActive = () => {
+        const step = cardWidth();
+        const index = Math.round(strip.scrollLeft / step);
+        pageButtons.forEach((button, buttonIndex) => {
+            button.classList.toggle("is-active", buttonIndex === index);
+        });
+    };
+
+    pageButtons.forEach((button, buttonIndex) => {
+        button.addEventListener("click", () => {
+            strip.scrollTo({ left: buttonIndex * cardWidth(), behavior: "smooth" });
+        });
+    });
+
+    strip.addEventListener("scroll", () => {
+        window.requestAnimationFrame(updateActive);
+    });
+
+    window.addEventListener("resize", updateActive);
+    updateActive();
+}
+
+// Load saved language on start
+window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("lang") || "de";
+    setLanguage(savedLang);
+    setupPager();
+    showVisual(0);
+});
+</script>
+
+</body>
+</html>

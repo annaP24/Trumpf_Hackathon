@@ -1,0 +1,23 @@
+{
+  "title": "Cutting Assistent",
+  "newsroomEyebrow": "Newsroom Template",
+  "newsroomHeading": "Placeholder for your newsroom content",
+  "newsroomIntro": "Use this area for stories, press releases, or magazine teasers.",
+  "card1Kicker": "Story 01",
+  "card1Date": "00.00.0000",
+  "card1Tag": "Category",
+  "card1Title": "Placeholder headline for the main feature",
+  "card1Text": "This is where your editorial summary or campaign message will go.",
+  "card1Link": "Read more",
+  "card2Tag": "Update",
+  "card2Title": "Placeholder headline for the second feature",
+  "card2Text": "Short description for the second newsroom element.",
+  "card3Tag": "Press",
+  "card3Title": "Placeholder headline for the third feature",
+  "card3Text": "Short description for the third newsroom element.",
+  "card4Tag": "Magazine",
+  "card4Title": "Placeholder headline for the fourth feature",
+  "card4Text": "Short teaser for another article or callout.",
+  "newsroomNote": "Scroll horizontally through the placeholders and replace them with your own content later.",
+  "footerText": "© 2026 TRUMPF. All rights reserved."
+}

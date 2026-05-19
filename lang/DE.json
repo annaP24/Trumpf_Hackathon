@@ -1,0 +1,23 @@
+{
+  "title": "Cutting Assistent",
+  "newsroomEyebrow": "Newsroom Vorlage",
+  "newsroomHeading": "Platzhalter für Ihre Newsroom-Inhalte",
+  "newsroomIntro": "Nutzen Sie diesen Bereich für Storys, Pressemitteilungen oder Magazin-Teaser.",
+  "card1Kicker": "Story 01",
+  "card1Date": "00.00.0000",
+  "card1Tag": "Kategorie",
+  "card1Title": "Platzhalter-Überschrift für den Hauptbeitrag",
+  "card1Text": "Hier steht später Ihre redaktionelle Zusammenfassung oder Kampagnenbotschaft.",
+  "card1Link": "Mehr lesen",
+  "card2Tag": "Update",
+  "card2Title": "Platzhalter-Überschrift für den zweiten Beitrag",
+  "card2Text": "Kurze Beschreibung für das zweite Newsroom-Element.",
+  "card3Tag": "Presse",
+  "card3Title": "Platzhalter-Überschrift für den dritten Beitrag",
+  "card3Text": "Kurze Beschreibung für das dritte Newsroom-Element.",
+  "card4Tag": "Magazin",
+  "card4Title": "Platzhalter-Überschrift für den vierten Beitrag",
+  "card4Text": "Kurzer Teaser für einen weiteren Beitrag oder Hinweis.",
+  "newsroomNote": "Scrollen Sie horizontal durch die Platzhalter und ersetzen Sie diese später mit Ihren eigenen Inhalten.",
+  "footerText": "© 2026 TRUMPF. Alle Rechte vorbehalten."
+}
