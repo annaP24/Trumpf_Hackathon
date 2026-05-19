@@ -448,6 +448,157 @@ nav a:focus-visible::after {
     font-size: 0.92rem;
 }
 
+.chat-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 0;
+    background: #005074;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25), 0 4px 10px rgba(15, 23, 42, 0.15);
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
+
+.chat-toggle:hover {
+    transform: translateY(-3px);
+    background: #003f5c;
+}
+
+.bot-icon {
+    width: 26px;
+    height: 26px;
+    stroke: #ffffff;
+}
+.btn {
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+ 
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+ 
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+ 
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background: #ffffff;
+    border-radius: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.chat-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header-logo {
+    width: 120px;
+    height: 40px;
+    background: url("https://cdn.loyjoy.com/t/928ca420e1eb9b60360f3d2954bb2e35be5042efab5cec3f3de635cf6ea14b45/assets/feb43e1a-4c47-47d2-9413-98ba9d61b63a.png") left center/contain no-repeat;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #fafafa;
+}
+
+.bot-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.message {
+    padding: 10px 14px;
+    border-radius: 0;
+    max-width: 80%;
+}
+
+.bot {
+    background: #e9ecef;
+    margin-bottom: 4px;
+}
+
+.user {
+    background: #005074;
+    color: #ffffff;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.ai-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 16px;
+    padding: 0 5px;
+    background: #005074;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input button {
+    border: none;
+    background: #ffffff;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    padding-right: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     margin-top: 36px;
     border-top: 1px solid var(--line);

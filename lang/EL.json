@@ -46,5 +46,8 @@
   "card4Title": "Πρόχειρος τίτλος για το τέταρτο θέμα",
   "card4Text": "Σύντομο teaser για άλλο άρθρο ή επισήμανση.",
   "newsroomNote": "Κυλήστε οριζόντια στα placeholders και αντικαταστήστε τα αργότερα με το δικό σας περιεχόμενο.",
-  "footerText": "© 2026 TRUMPF. Με επιφύλαξη παντός δικαιώματος."
+  "ctaHeading": "Είστε έτοιμοι για το επόμενο επίπεδο παραγωγής;",
+  "ctaText": "Ζήστε το Cutting Assistant σε ζωντανή επίδειξη.",
+  "ctaButton": "Κλείστε demo τώρα",
+  "footerText": "© 2026 TRUMPF - Cutting Assistant"
 }
